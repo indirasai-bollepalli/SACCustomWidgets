@@ -1,0 +1,123 @@
+{
+	"id": "com.sap.sample.Outlookicon",
+	"version": "1.0.0",
+	"name": "Outlook Icon",
+	"description": "An Outlook Icon",
+	"newInstancePrefix": "OutlookIcon",
+	"icon": "/icon.png",
+	"vendor": "SAP",
+	"eula": "",
+	"license": "",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "com-sap-sample-Outlookicon",
+			"url": "/Outlookicon.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		
+		{
+			"kind": "builder",
+			"tag": "com-sap-sample-coloredbox-builder",
+			"url": "/Outlookicon.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		}
+	],
+	"properties": {
+		"email": {
+            "description": "Email Address",
+            "type": "string",
+            "default": "example@example.com"
+        },
+        "subject": {
+            "description": "Email Subject",
+            "type": "string",
+            "default": "SAP Analytics Insights"
+        },
+        "message": {
+            "description": "Message to send",
+            "type": "string",
+            "default": "Hello from SAP Analytics Cloud"
+        },
+        "caption": {
+            "description": "Caption",
+            "type": "string",
+            "default": "Send to Outlook"
+        }
+	},
+	"methods": {
+        "setEmail": {
+            "description": "Set Email Address",
+            "parameters": [
+                {
+                    "name": "email",
+                    "type": "string",
+                    "description": "Email Address"
+                }
+            ],
+            "body": "this.email = email;"
+        },
+        "getEmail": {
+            "returnType": "string",
+            "description": "Return Email Address",
+            "body": "return this.email;"
+        },
+        "setSubject": {
+            "description": "Set Email Subject",
+            "parameters": [
+                {
+                    "name": "subject",
+                    "type": "string",
+                    "description": "Email Subject"
+                }
+            ],
+            "body": "this.subject = subject;"
+        },
+        "getSubject": {
+            "returnType": "string",
+            "description": "Return Email Subject",
+            "body": "return this.subject;"
+        },
+        "setMessage": {
+            "description": "Set Email Message",
+            "parameters": [
+                {
+                    "name": "message",
+                    "type": "string",
+                    "description": "Message to send"
+                }
+            ],
+            "body": "this.message = message;"
+        },
+        "getMessage": {
+            "returnType": "string",
+            "description": "Return Email Message",
+            "body": "return this.message;"
+        },
+        "setCaption": {
+            "description": "Set Caption",
+            "parameters": [
+                {
+                    "name": "caption",
+                    "type": "string",
+                    "description": "Caption"
+                }
+            ],
+            "body": "this.caption = caption;"
+        },
+        "getCaption": {
+            "returnType": "string",
+            "description": "Return Caption",
+            "body": "return this.caption;"
+        }
+	},
+	"events": {
+        "onClick": {
+            "description": "User Clicked."
+        }
+	}
+}
+
+ 
