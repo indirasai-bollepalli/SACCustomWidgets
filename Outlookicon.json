@@ -1,5 +1,5 @@
 {
-	"id": "com.sap.sample.Outlookicon",
+	"id": "com.sap.sample.outlookicon",
 	"version": "1.0.0",
 	"name": "Outlook Icon",
 	"description": "An Outlook Icon",
@@ -11,7 +11,7 @@
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "com-sap-sample-Outlookicon",
+			"tag": "com-sap-sample-outlookicon",
 			"url": "/Outlookicon.js",
 			"integrity": "",
 			"ignoreIntegrity": true
@@ -19,7 +19,7 @@
 		
 		{
 			"kind": "builder",
-			"tag": "com-sap-sample-coloredbox-builder",
+			"tag": "com-sap-sample-outlook-builder",
 			"url": "/Outlookicon.js",
 			"integrity": "",
 			"ignoreIntegrity": true
